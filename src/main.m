@@ -46,7 +46,7 @@ tol = 1e-10;            % []        Tolerance factor
 fprintf('<strong>Mean Anomaly (Mo)</strong>\n Mo = <strong>%.4f [deg]</strong>.\n\n', Mo_deg);
 [E,ii] = Kepler(e,Mo,tol);      % [rad] E = Eccentric Anomaly
 Edeg = rad2deg(E);              % [deg] Eccentric Anomaly
-fprintf('<strong>Ecentric Anomaly (E)</strong> after %d iterations:\n', ii);
+fprintf('<strong>Eccentric Anomaly (E)</strong> after %d iterations:\n', ii);
 fprintf('E = <strong>%.4f [rad]</strong> = <strong>%.4f [deg]</strong>.\n\n', E, Edeg);
 
 % Calculating True Anomaly
